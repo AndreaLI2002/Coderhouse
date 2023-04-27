@@ -8,41 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a class= "Home" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="sobre-mi" href="pages/sobre-mi.html">About Me</a>
-                </li>
-                <li>
-                    <a class= "proyectos" href="pages/proyectos.html">My Proyects</a>
-                </li>
-                <li>
-                    <a class= "cursos" href="pages/cursos.html">Education</a>
-                </li>
-
-            </ul>
+    <header class ="header-container">
+        <nav class="header">
+            
+            <div class= "Home">
+                <a href="index.html">Home</a>
+            </div>   
+            <div class="sobre-mi">
+                <a href="pages/sobre-mi.html">About Me</a>
+            </div>
+            <div class= "proyectos">
+                <a href="pages/proyectos.html">My Proyects</a>
+            </div>
+            <div class= "cursos">
+                <a href="pages/cursos.html">Education</a>
+            </div>
+                    
         </nav>
     </header>
     
-    <section class="presentacion">
-        <h2> Hi!</h2>
-        <h1> I'm Andrea López Iacoi</h1>
-        <h3> Developer and UX/UI Designer</h3>
-        <img src="img/Foto.jpg" alt="Lopez-Iacoi-Andrea">
-    </section>
+    <main>
+        <section class="presentacion">
+            <h2> Hi!</h2>
+            <h1> I'm Andrea López Iacoi</h1>
+            <h3> Developer and UX/UI Designer</h3>
+        </section>
+    
+        <section class="img-foto"> 
+            <img src="img/Foto.jpg" alt="Lopez-Iacoi-Andrea">
+        </section>
 
-    <section class="descripcion">
-        I'm from Argentina, I'm 20 years old and I want to find my first IT Experience.
-        Do you want to know more about me? 
-        I invite you to click on any option!
-    </section>
+        <section class="descripcion">
+            <div class="descripcion-p">
+            <p>I'm from Argentina, I'm 20 years old and I want to find my first IT Experience.
+            Do you want to know more about me? 
+            I invite you to click on any option!</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <nav>
+        <nav class="contact-me">
             <a href="pages/contactame.html">Contact me!</a>
         </nav>
     </footer>

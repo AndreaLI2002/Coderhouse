@@ -44,7 +44,6 @@ html{
 .presentacion h2{
     display: flex;
     justify-content: center;
-
     font-size:40px;
     font-family: 'Delicious Handrawn', cursive;
     margin-top: 20px;
@@ -54,7 +53,6 @@ html{
 .presentacion h3 {
     display: flex;
     justify-content: center;
-
     font-size:25px;
     font-family: 'PT Sans Narrow', sans-serif;
     margin-top: 5px;
@@ -86,26 +84,7 @@ html{
 /*INDEX*/
 
 /*SOBRE MI*/
-.grid-container-sobremi{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    'img-h      img-h    img-h    img-h'
-    'titulo-h titulo-h titulo-h titulo-h';
-}
-.titulo-h{
-    width: 100%;
-    grid-area: titulo-h;
-}
-.img-h{
-    grid-area: img-h;
-    width: 100%;
-}
-.img-h img{
-    width: 50px;
-    height: 50px;
-}
+
 .sobremi-container{
     display:flex;
     justify-content: center;
@@ -127,30 +106,7 @@ html{
 }
 /*FIN SOBRE MI*/
 
-/*CURSOS*/
-.grid-container-cursos{
-    display: grid;
-    grid-template-rows: repeat(3, 30%);
-    grid-template-columns: repeat(3, 30%);
-    grid-template-areas: 
-    'titulo titulo titulo'
-    'img img img'
-    'descripcion descripcion descripcion';
-}
-.img-cursos{
-    grid-area: img;
-}
-.titulo-cursos{
-    grid-area: titulo;
-}
-.descripcion-cursos{
-    grid-area: descripcion;
-}
-
-/*FIN CURSOS*/
-
-
-/*CONTACT ME*/
+/*CONTACT ME BOTON*/
 footer{
     display: flex;
     justify-content: center;
@@ -169,3 +125,23 @@ footer{
     border-radius:300px;
 }
 /*FIN CONTACT ME!*/
+
+/*CONTACT ME HTML*/
+.adios{
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 150%;
+    color: white
+}
+.botones-contacto{
+    text-align: center;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    padding: 17%;
+}
+.botones-contacto h1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 200%;
+    margin-bottom: 5% ;
+}
+

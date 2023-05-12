@@ -2,8 +2,12 @@
 @import "components/mainIndex";
 @import "components/contact-boton";
 @import "components/sobremi-gr";
+@import "base/colores";
 
 *{
     margin: 0;
     padding:0;
+}
+html{
+    background-color: $bg-general;
 }

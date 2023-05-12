@@ -1,6 +1,8 @@
 @import "../base/fonts";
+@import "../base/colores";
 
 main{
+    background-color: $bg-general;
     .presentacion{
         h1{
             display: flex;

@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
-footer .contact-me a, header .cursos .link-cursos, header .proyectos .link-proyectos, header .sobre-mi .link-about-me, header .home .link-index {
+footer nav a, header .cursos .link-cursos, header .proyectos .link-proyectos, header .sobre-mi .link-about-me, header .home .link-index {
   text-decoration: none;
   text-underline-offset: none;
   color: #f5f5f5;
@@ -38,6 +38,9 @@ header .cursos .link-cursos:hover {
   text-decoration: underline wavy white;
 }
 
+main {
+  background-color: #251a38;
+}
 main .presentacion h1 {
   display: flex;
   justify-content: center;
@@ -88,8 +91,9 @@ main .descripcion-container .descripcion p {
 footer {
   display: flex;
   justify-content: center;
+  background-color: #251a38;
 }
-footer .contact-me {
+footer nav {
   display: flex;
   justify-content: center;
   width: 30%;
@@ -98,32 +102,75 @@ footer .contact-me {
   border-radius: 300px;
   padding: 10px;
 }
-footer .contact-me a {
+footer nav a {
   margin: 0;
   font-size: 15px;
 }
-footer .contact-me a:hover {
+footer nav a:hover {
   text-decoration: underline wavy white;
 }
 
-.carousel-container {
-  background-color: linear-gradient(#522b90, #5c1ac8);
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #251a38;
 }
-.carousel-container .my-hobbies {
-  text-align: center;
-  font-size: 80%;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-.carousel-container img {
-  width: 50%;
-}
-.carousel-container .carousel .carousel-inner .carousel-item img {
+footer nav {
+  display: flex;
+  justify-content: center;
   width: 30%;
+  background-image: linear-gradient(#b473b0, #bfa1ef);
+  border: 2px outset #000000;
+  border-radius: 300px;
+  padding: 10px;
+}
+footer nav a {
+  margin: 0;
+  font-size: 15px;
+}
+footer nav a:hover {
+  text-decoration: underline wavy white;
+}
+
+main {
+  background-color: #251a38;
+}
+main .sobremi-container h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: white;
+  font-size: 400%;
+  text-align: center;
+}
+main .sobremi-container p {
+  font-family: "Inconsolata", monospace;
+  color: white;
+  font-size: 100%;
+  text-align: center;
+  margin: 5% 10%;
+}
+main .carousel-container {
+  background-color: #251a38;
+  width: 30%;
+}
+main .carousel-container .my-hobbies {
+  text-align: center;
+  font-size: 300%;
+  font-family: "Inconsolata", monospace;
+  color: white;
+}
+main .carousel-container h5 {
+  font-family: "Delicious Handrawn", cursive;
+  color: white;
+  text-align: center;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  background-color: #251a38;
 }
 
 /*# sourceMappingURL=style.css.map */

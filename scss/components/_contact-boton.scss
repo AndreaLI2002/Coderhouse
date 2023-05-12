@@ -2,11 +2,11 @@
 
 footer{
     display: flex;
-    justify-content: center;
-
-    .contact-me{
+    justify-content: center;  
+    background-color: $bg-general;
+    nav{
         display: flex;
-        justify-content: center;
+        justify-content: center;   
         width: 30%;
         background-image: $bg-secundario;
         border: 2px outset #000000;
@@ -20,6 +20,5 @@ footer{
         a:hover{
             text-decoration: underline wavy white;
         }
-
     }
 }

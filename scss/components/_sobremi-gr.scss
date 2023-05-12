@@ -1,24 +1,46 @@
 @import "../base/colores";
 @import "../base/fonts";
+@import "contact-boton";
 
-
-.carousel-container{
+main{
     background-color: $bg-general;
-    .my-hobbies{
-        text-align: center;
-        font-size: 80%;
-        font-family: $font-general;
-    }
-    img{
-        width: 50%;
-    }
-    .carousel{
-        .carousel-inner{
-            .carousel-item{
-                img{
-                    width: 30%;
-                }
-            }
+    .sobremi-container{
+        h1{
+            font-family: $font-general;
+            color: white;
+            font-size: 400%;
+            text-align: center;
+        }
+
+        p{
+            font-family: $font-p;
+            color: white;
+            font-size: 100%;
+            text-align: center;
+            margin: 5% 10%;
         }
     }
+    .carousel-container{
+        background-color: $bg-general;
+        width: 30%;
+        
+        .my-hobbies{
+            text-align: center;
+            font-size: 300%;
+            font-family: $font-p;
+            color: white;
+
+        }
+        
+        h5{
+            font-family: $font-subtitulo;
+            color: white;
+            text-align: center;
+        }
+
+    }
 }
+   
+
+
+

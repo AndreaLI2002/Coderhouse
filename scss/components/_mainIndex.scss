@@ -1,0 +1,56 @@
+@import "../base/fonts";
+
+main{
+    .presentacion{
+        h1{
+            display: flex;
+            justify-content: center;
+            font-size:45px;
+            font-family: $font-general;
+            color: #ffffff;
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+            font-size:40px;
+            font-family: $font-subtitulo;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            color: #d4baff;
+        }
+        h3{
+            display: flex;
+            justify-content: center;
+            font-size:25px;
+            font-family: $font-general;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .foto{
+            display: flex;
+            justify-content: center;
+            img{
+                border: 2px outset #000000;
+                border-radius:300px;
+                height: 400px;
+                width: 300px;
+            }
+        }
+    }
+
+    .descripcion-container{
+        display: flex;
+        justify-content: center;
+        .descripcion{
+            p{
+            padding: 30px;
+            margin: 0px 380px;
+            color: #ffffff;
+            font-family: $font-p;
+            font-size:20px;
+            }
+        }
+    }
+}
+

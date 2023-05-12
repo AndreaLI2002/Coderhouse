@@ -1,0 +1,25 @@
+@import "../base/colores";
+
+footer{
+    display: flex;
+    justify-content: center;
+
+    .contact-me{
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        background-image: $bg-secundario;
+        border: 2px outset #000000;
+        border-radius:300px;
+        padding: 10px;
+        a{        
+            margin: 0;
+            font-size: 15px;
+            @extend %links;            
+        }
+        a:hover{
+            text-decoration: underline wavy white;
+        }
+
+    }
+}

@@ -144,6 +144,7 @@ main {
 main .sobremi-container h1 {
   font-family: "PT Sans Narrow", sans-serif;
   color: white;
+  padding-top: 5%;
   font-size: 400%;
   text-align: center;
 }
@@ -152,11 +153,12 @@ main .sobremi-container p {
   color: white;
   font-size: 100%;
   text-align: center;
-  margin: 5% 10%;
+  margin: 2% 5%;
 }
 main .carousel-container {
   background-color: #251a38;
   width: 30%;
+  padding: 2%;
 }
 main .carousel-container .my-hobbies {
   text-align: center;

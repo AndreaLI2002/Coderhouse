@@ -8,6 +8,7 @@ main{
         h1{
             font-family: $font-general;
             color: white;
+            padding-top: 5%;
             font-size: 400%;
             text-align: center;
         }
@@ -17,12 +18,13 @@ main{
             color: white;
             font-size: 100%;
             text-align: center;
-            margin: 5% 10%;
+            margin: 2% 5%;
         }
     }
     .carousel-container{
         background-color: $bg-general;
         width: 30%;
+        padding: 2%;
         
         .my-hobbies{
             text-align: center;

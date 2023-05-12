@@ -4,6 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
 footer nav a, header .cursos .link-cursos, header .proyectos .link-proyectos, header .sobre-mi .link-about-me, header .home .link-index {
   text-decoration: none;
   text-underline-offset: none;
@@ -162,6 +168,54 @@ main .carousel-container h5 {
   font-family: "Delicious Handrawn", cursive;
   color: white;
   text-align: center;
+}
+
+.proyectos-container .creations {
+  text-align: center;
+  font-size: 300%;
+  font-family: "Inconsolata", monospace;
+  color: white;
+  padding-top: 5%;
+}
+.proyectos-container .proyectos {
+  display: flex;
+  justify-content: space-around;
+  padding: 10%;
+  transition: all 3s;
+}
+.proyectos-container .proyectos .proyecto-d:hover {
+  transform: scale(2);
+}
+.proyectos-container .proyectos .proyecto-lum:hover {
+  transform: scale(2);
+}
+
+.botones-contacto .hey {
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 300%;
+  text-align: center;
+  color: white;
+}
+.botones-contacto .datos {
+  display: flex;
+  justify-content: center;
+}
+.botones-contacto .datos div h2 {
+  padding-top: 5%;
+  font-family: "Inconsolata", monospace;
+  font-size: 300%;
+  text-align: center;
+  color: white;
+}
+.botones-contacto .datos div img {
+  width: 15%;
+}
+
+.adios h3 {
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 200%;
+  text-align: center;
+  color: white;
 }
 
 * {

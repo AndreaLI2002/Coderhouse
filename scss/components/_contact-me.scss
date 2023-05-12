@@ -1,0 +1,40 @@
+@import "../base/fonts";
+@import "../base/colores";
+
+.botones-contacto{
+    .hey{
+        font-family: $font-subtitulo;
+        font-size: 300%;
+        text-align: center;
+        color: white;
+    }
+    .datos{
+        display:flex;
+        justify-content: center;
+        div{
+            h2{
+                padding-top: 5%;
+                font-family: $font-p;
+                font-size: 300%;
+                text-align: center;
+                color: white;
+            }
+        img {
+            width: 15%;
+        }
+        }
+    }
+
+}
+
+.adios{
+
+    h3{
+
+        font-family: $font-subtitulo;
+        font-size: 200%;
+        text-align: center;
+        color: white;
+    }
+
+}

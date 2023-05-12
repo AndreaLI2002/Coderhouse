@@ -1,0 +1,25 @@
+@import "../base/colores";
+@import "../base/fonts";
+
+.proyectos-container{
+    .creations{
+        text-align: center;
+        font-size: 300%;
+        font-family: $font-p;
+        color: white;
+        padding-top: 5%;
+    }
+    .proyectos{
+        display: flex;
+        justify-content: space-around;
+        padding: 10%;
+        transition: all 3s;
+        .proyecto-d:hover{
+            transform: scale(2);
+        }
+        .proyecto-lum:hover{
+            transform: scale(2);
+        }
+    }
+    
+}

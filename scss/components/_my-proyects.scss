@@ -2,8 +2,11 @@
 @import "../base/fonts";
 
 .proyectos-container{
+    flex-wrap: wrap;
+
     .creations{
         text-align: center;
+        margin: 2%;
         font-size: 300%;
         font-family: $font-p;
         color: white;
@@ -14,6 +17,14 @@
         justify-content: space-around;
         padding: 10%;
         transition: all 3s;
+        flex-wrap: wrap;
+
+        .proyecto-d{
+            a{width: 30%;}                   
+        }
+        .proyecto-lum{
+            a{width: 30%;}
+        }
         .proyecto-d:hover{
             transform: scale(2);
         }
@@ -21,5 +32,5 @@
             transform: scale(2);
         }
     }
-    
+
 }

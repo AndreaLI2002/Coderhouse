@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Css-->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
         <!--SEO-->
         <meta name="keywords" content="desarrollo web, programacion, diseño ux/ui, designe, IT, portfolio">
         <meta name="author" content="Andrea Lopez Iacoi">
@@ -41,24 +45,48 @@
         </nav>
     </header>
 
-    <section class="botones-contacto">
-        <h1 class="hey"> Hey! 
-            I was waiting for your call...</h1>
-        <nav class="datos">
-            <div>
-                <h2>Mail: andy.li@hotmail.es</h2>
-            <div>
-                <h2>Number: +54 1173651173</h2>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/andreavlopeziacoi/"><img src="img/linkedin.jpg"></a> 
-            </div>
-        </nav>
-    </section>
+    <main>
+        <h1 class="hey"> Hey! I was waiting for your call...</h1>
+        <h2 class="form-propuesta"> You can leave me your offer completing this form: </h2>
+        <section class="form">
+            <section class="form-1">
+                <label for="formControlInput" class="form-label form-letra">Name</label>
+                <input type="email" class="form-control" id="formControlInput" placeholder="Company | Talent Acquisition | Recruiter">    
+            </section>
+
+            <section class="form-2">
+                <label for="formControlInput" class="form-label form-letra">Email address</label>
+                <input type="email" class="form-control" id="formControlInput" placeholder="name@example.com">    
+            </section>
+
+            <section class="form-3">
+                <label for="formControlInput" class="form-label form-letra">Description</label>
+                <input type="email" class="form-control form-descripcion" id="formControlInput" placeholder="Offer | Opportunity">    
+            </section>
+
+
+        </section>
+
+        <div class="or">
+            <h2> Or contact me through...</h2>
+        </div>
     
-    <footer class="adios">
-        <h3>Thank you! I see you soon </h3>
-    </footer>
+        <section class="flex-container">
+
+            <nav class="datos">
+                <h2>Mail: andy.li@hotmail.es</h2>
+                <a href="https://www.linkedin.com/in/andreavlopeziacoi/"><img src="../img/linkedin.png"></a> 
+                <h2>Number: +54 1173651173</h2>    
+            </nav>
+        </section>
+        
+        <footer class="adios">
+            <h3>Thank you for your time! I see you soon </h3>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
 </body>
 </html>

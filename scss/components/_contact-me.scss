@@ -1,28 +1,83 @@
 @import "../base/fonts";
 @import "../base/colores";
 
-.botones-contacto{
-    .hey{
-        font-family: $font-subtitulo;
-        font-size: 300%;
-        text-align: center;
-        color: white;
+.hey{
+    font-family: $font-subtitulo;
+    padding-top: 5%;
+    font-size: 300%;
+    text-align: center;
+    color: white;
+}
+.form{
+    background-color: $bg-general;
+    .form-1{
+        margin: 2% 10%;
     }
+    .form-2{
+        margin: 2% 10%;
+    }  
+    .form-3{
+        margin: 2% 10%;
+        .form-descripcion{
+            height: 100px;
+        }
+    }  
+}
+
+.form-propuesta{
+    font-family: $font-p;
+    text-align: center;
+    margin: 2% 20%;
+    color: white;
+}
+
+.form-letra{
+    color: white;
+    font-family: $font-p;
+}
+
+.or{
+    color: white;
+    font-family: $font-p;
+    text-align: center;
+    padding: 2%;
+    color: $hi;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
     .datos{
-        display:flex;
-        justify-content: center;
-        div{
-            h2{
-                padding-top: 5%;
-                font-family: $font-p;
-                font-size: 300%;
-                text-align: center;
-                color: white;
-            }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+
+        h2{
+            font-family: $font-p;
+            font-size: 120%;
+            color: white;
+        }
         img {
-            width: 15%;
+            width: 100%;
+            align-items: center;
         }
-        }
+        @media screen and (max-width: 768px)
+        {
+            img{
+                width: 50%;
+                align-items: end;
+            }
+       }
+       @media screen and (width<=361px)
+       {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
     }
 
 }
@@ -35,6 +90,7 @@
         font-size: 200%;
         text-align: center;
         color: white;
+        margin: 2%;
     }
 
 }

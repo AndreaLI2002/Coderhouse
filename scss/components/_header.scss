@@ -1,5 +1,6 @@
 @import "../base/colores";
 @import "../base/extends";
+@import "../base/fonts";
 
 header{
     width: 100%;
@@ -8,6 +9,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: $font-subtitulo;
+    font-size: 150%;
 
     nav{
         width: 100%;

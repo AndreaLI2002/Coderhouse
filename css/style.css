@@ -10,10 +10,17 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inconsolata:wght@300&family=PT+Sans+Narrow&display=swap");
 footer nav a, header .cursos .link-cursos, header .proyectos .link-proyectos, header .sobre-mi .link-about-me, header .home .link-index {
   text-decoration: none;
   text-underline-offset: none;
   color: #f5f5f5;
+  font-size: 100%;
 }
 
 header {
@@ -23,6 +30,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 150%;
 }
 header nav {
   width: 100%;
@@ -87,8 +96,7 @@ main .descripcion-container {
   justify-content: center;
 }
 main .descripcion-container .descripcion p {
-  padding: 30px;
-  margin: 0px 380px;
+  margin: 2% 30%;
   color: #ffffff;
   font-family: "Inconsolata", monospace;
   font-size: 20px;
@@ -165,6 +173,8 @@ main .carousel-container .my-hobbies {
   font-size: 300%;
   font-family: "Inconsolata", monospace;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 main .carousel-container h5 {
   font-family: "Delicious Handrawn", cursive;
@@ -172,8 +182,12 @@ main .carousel-container h5 {
   text-align: center;
 }
 
+.proyectos-container {
+  flex-wrap: wrap;
+}
 .proyectos-container .creations {
   text-align: center;
+  margin: 2%;
   font-size: 300%;
   font-family: "Inconsolata", monospace;
   color: white;
@@ -184,6 +198,13 @@ main .carousel-container h5 {
   justify-content: space-around;
   padding: 10%;
   transition: all 3s;
+  flex-wrap: wrap;
+}
+.proyectos-container .proyectos .proyecto-d a {
+  width: 30%;
+}
+.proyectos-container .proyectos .proyecto-lum a {
+  width: 30%;
 }
 .proyectos-container .proyectos .proyecto-d:hover {
   transform: scale(2);
@@ -192,25 +213,83 @@ main .carousel-container h5 {
   transform: scale(2);
 }
 
-.botones-contacto .hey {
+.hey {
   font-family: "Delicious Handrawn", cursive;
+  padding-top: 5%;
   font-size: 300%;
   text-align: center;
   color: white;
 }
-.botones-contacto .datos {
+
+.form {
+  background-color: #251a38;
+}
+.form .form-1 {
+  margin: 2% 10%;
+}
+.form .form-2 {
+  margin: 2% 10%;
+}
+.form .form-3 {
+  margin: 2% 10%;
+}
+.form .form-3 .form-descripcion {
+  height: 100px;
+}
+
+.form-propuesta {
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  margin: 2% 20%;
+  color: white;
+}
+
+.form-letra {
+  color: white;
+  font-family: "Inconsolata", monospace;
+}
+
+.or {
+  color: white;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  padding: 2%;
+  color: #d4baff;
+}
+
+.flex-container {
   display: flex;
   justify-content: center;
+  padding: 2%;
 }
-.botones-contacto .datos div h2 {
-  padding-top: 5%;
+.flex-container .datos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+}
+.flex-container .datos h2 {
   font-family: "Inconsolata", monospace;
-  font-size: 300%;
-  text-align: center;
+  font-size: 120%;
   color: white;
 }
-.botones-contacto .datos div img {
-  width: 15%;
+.flex-container .datos img {
+  width: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .flex-container .datos img {
+    width: 50%;
+    align-items: end;
+  }
+}
+@media screen and (width <= 361px) {
+  .flex-container .datos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .adios h3 {
@@ -218,6 +297,108 @@ main .carousel-container h5 {
   font-size: 200%;
   text-align: center;
   color: white;
+  margin: 2%;
+}
+
+main .cursos-container {
+  display: none;
+}
+main .grid-container-cursos {
+  padding: 5%;
+  display: grid;
+  grid-template-rows: 400px auto auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+main .grid-container-cursos .grid-item img {
+  width: 100%;
+  height: 100%;
+}
+main .grid-container-cursos .grid-item h1 {
+  color: white;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 5%;
+}
+main .grid-container-cursos .grid-item p {
+  color: white;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  margin: 5%;
+}
+@media screen and (max-width: 768px) {
+  main .grid-container-cursos {
+    display: none;
+  }
+  main .cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .cursos-container .upe .upe-img {
+    display: flex;
+    justify-content: center;
+  }
+  main .cursos-container .upe .upe-img img {
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+  }
+  main .cursos-container .upe h1 {
+    color: white;
+    text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 5%;
+  }
+  main .cursos-container .upe p {
+    color: white;
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+    margin: 5%;
+  }
+  main .cursos-container .auto .auto-img {
+    display: flex;
+    justify-content: center;
+  }
+  main .cursos-container .auto .auto-img img {
+    width: 100%;
+    height: 100%;
+  }
+  main .cursos-container .auto h1 {
+    color: white;
+    text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 5%;
+  }
+  main .cursos-container .auto p {
+    color: white;
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+    margin: 5%;
+  }
+  main .cursos-container .trans .trans-img {
+    display: flex;
+    justify-content: center;
+  }
+  main .cursos-container .trans .trans-img img {
+    width: 50%;
+    height: 50%;
+  }
+  main .cursos-container .trans h1 {
+    color: white;
+    text-align: center;
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 5%;
+  }
+  main .cursos-container .trans p {
+    color: white;
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+    margin: 5%;
+  }
+}
+
+.form {
+  background-color: #251a38;
 }
 
 * {
